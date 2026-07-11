@@ -1,3 +1,3 @@
 # AI-Resume-Analyser-
 An AI Resume Analyser is a tool that uses AI to evaluate resumes, extract skills, education, and experience, and match them with job descriptions. It provides a match score, highlights missing keywords, and suggests improvements to make the resume ATS-friendly and increase hiring chances.
- Build your resume strong with this . 
+ Build your resume strong with this ... 
