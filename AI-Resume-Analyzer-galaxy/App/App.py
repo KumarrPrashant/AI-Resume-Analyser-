@@ -1,5 +1,5 @@
 # Originally developed by dnoobnerd [https://dnoobnerd.netlify.app]  ·  Made with Streamlit
-# Galaxy / Cosmos UI redesign
+# Galaxy / Cosmos UI redesign .
 
 
 ###### Packages Used ######
@@ -16,7 +16,7 @@ import io, random
 import plotly.express as px  # to create visualisations at the admin session
 import plotly.graph_objects as go
 
-# pre stored data for prediction purposes
+# pre stored data for prediction purposes .
 from Courses import ds_course, web_course, android_course, ios_course, uiux_course, resume_videos, interview_videos
 
 # ---- Galaxy theme engine ----
@@ -27,7 +27,7 @@ from theme import (
 )
 
 # Optional / best-effort imports — the app should still run (and still look great)
-# even when these heavier / network-dependent dependencies aren't available.
+# even when these heavier / network-dependent dependencies aren't available...
 try:
     import geocoder
     HAS_GEOCODER = True
@@ -78,10 +78,10 @@ except Exception:
     pass
 
 
-###### Preprocessing functions ######
+###### Preprocessing functions ########
 
 
-# Generates a link allowing the data in a given panda dataframe to be downloaded in csv format
+# Generates a link allowing the data in a given panda dataframe to be downloaded in csv format.
 def get_csv_download_link(df, filename, text):
     csv = df.to_csv(index=False)
     ## bytes conversions
@@ -90,7 +90,7 @@ def get_csv_download_link(df, filename, text):
     return href
 
 
-# Reads Pdf file and check_extractable
+# Reads Pdf file and check_extractable..
 def pdf_reader(file):
     if not HAS_PDFMINER:
         return ""
@@ -109,7 +109,7 @@ def pdf_reader(file):
     return text
 
 
-# show uploaded file path to view pdf_display
+# show uploaded file path to view pdf_display...
 def show_pdf(file_path):
     with open(file_path, "rb") as f:
         base64_pdf = base64.b64encode(f.read()).decode('utf-8')
